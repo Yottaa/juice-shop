@@ -32,6 +32,21 @@
   </script>
 </head>
 <body class="mat-app-background bluegrey-lightgreen-theme">
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId            : '605276667031493',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v7.0'
+      });
+      FB.ui({
+        method: 'share',
+        href: 'https://developers.facebook.com/docs/'
+      }, function(response){});
+  };
+</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
   <app-root></app-root>
 </body>
 </html>
